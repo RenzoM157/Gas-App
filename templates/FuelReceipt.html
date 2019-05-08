@@ -1,0 +1,15 @@
+{% extends "layout.html"%}
+{% block body%}
+<div class="container">
+    <h5>Fuel Receipt</h5>
+    <form action="" method ="POST">
+      <p><output type = "text" name = "gallonsRequested">Gallons Requested: {{ data2[1][1] }}</output></p>
+      <p><output type = "text" name = "State">State: {{ data2[0][0] }}</output></p> 
+      <p><output type = "text" name = "delivery-date">Date: {{ data2[1][0] }}</output></p>
+      <p><output type = "text" name = "suggestedPrice">Suggested Price/gallon: $ {{ data2[1][2] }} /gal</output></p>
+      <p><output type = "text" name = "total">Total Amount Due: $ {{ data2[1][3] }}</output> </p>        
+    </form>
+</div>
+
+{% endblock%}
+

@@ -1,0 +1,21 @@
+{% extends "layout.html"%}
+{% block body%}
+<div class="container">
+  <h5>Thank you, {{data[0][0]}}! Your account details have been saved</h5>
+  <p>Name: {{data[0][0]}}</p>
+  <p>Address: {{data[0][1]}}</p>
+  <p>City: {{data[0][2]}}</p>
+  <p>State: {{data[0][3]}}</p>
+  <p>Zipcode: {{data[0][4]}}</p>
+</div>
+<!--
+{% for item in data %}
+<tr>
+    <td>{{item[0]}}</td>
+    <td>{{item[1]}}</td>
+    <td>{{item[2]}}</td>
+    <td>{{item[3]}}</td>
+    <td>{{item[4]}}</td>
+</tr>
+{% endfor %} -->
+{% endblock%}
